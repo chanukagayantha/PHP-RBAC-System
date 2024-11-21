@@ -39,7 +39,7 @@ if (!hasPermission($userId, 'view_dashboard')) {
 
 <body>
     <h1>Viewer Dashboard</h1>
-    <p>Welcome, Viewer!</p>
+    <p>Welcome, <?php echo htmlspecialchars($user['name']); ?> (<?php echo htmlspecialchars($user['username']); ?>)!</p>
 
     <h2>Permissions</h2>
     <ul>
